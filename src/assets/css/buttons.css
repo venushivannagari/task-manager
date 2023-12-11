@@ -1,0 +1,14 @@
+.btn-add{
+    display: flex;
+    background-color: transparent;
+}
+.btn-add > svg{
+    margin-right: 5px;
+    stroke-width: 3;
+}
+.btn.icon-btn{
+  background: transparent;
+}
+.btn.icon-btn:disabled{
+  border: none;
+}

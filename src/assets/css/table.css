@@ -1,0 +1,77 @@
+.task-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 40px;
+    background-color: #eceef1;
+    font-size: 15px;
+}
+.task-table thead {
+    color: #C0C1C4;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+.task-table thead td{
+    padding: 15px;
+    background-color: #eceef1;
+}
+.task-table td {
+    padding: 7px 15px;
+    border: none;
+}
+.task-table tr{
+    box-shadow: 0px 0px 5px #eceef1;
+    background-color: #fff;
+}
+
+.task-table tr td { 
+    border-width: 2px;
+    border-color: #eceef1;
+    border-top-style: solid;
+    border-bottom-style: solid; 
+}
+.task-table tr td:first-child { 
+    border-top-style: solid;
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+}
+.task-table tr td:last-child { 
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+.task-table tr:last-child td:first-child {
+    border-bottom-style: solid;
+    border-bottom-left-radius: 10px;
+ }
+
+@media screen and (max-width: 600px) {  
+    .responsive thead {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
+    
+    .responsive tr {
+      display: block;
+      margin-bottom: .625em;
+      background-color: #eceef1;
+    }
+    
+    .responsive td {
+      display: flex;
+      justify-content: space-between;
+      font-size: .8em;
+      text-align: right;
+      border-radius: 10px; 
+      background-color: #fff;
+    }
+    
+    .responsive td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+}
